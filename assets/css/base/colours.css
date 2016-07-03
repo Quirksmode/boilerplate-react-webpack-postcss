@@ -1,0 +1,29 @@
+/**
+ * Colours
+ * Here we define the colour variables that are used throughout the other stylesheets
+ * For Colour names check out {@link http://chir.ag/projects/name-that-color/ Name That Colour}
+ * Theme colours are defined via CMS (index/theme-css.html)
+ * @group css.base.colours
+ */
+
+/**
+// ------------------------------------------------
+// App Colours
+// ------------------------------------------------
+*/
+
+:root {
+  --color-mine-shaft: #333;
+}
+
+
+
+/**
+// ------------------------------------------------
+// Primary Font Colour
+// ------------------------------------------------
+*/
+
+body {
+    color: var(--color-mine-shaft);
+}

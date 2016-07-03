@@ -1,0 +1,50 @@
+/**
+ * Base
+ * @group css.base.base
+ */
+
+/* Custom Resets */
+p,
+pre,
+blockquote,
+a,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+fieldset {
+    margin:0;
+    padding:0;
+}
+
+
+/* Global Styles */
+body {
+    background: #fff;
+}
+
+img {
+    /* Responsive images */
+    max-width: 100%;
+    height: auto;
+    display:block;
+}
+
+iframe {
+    border: 0;
+    max-width: 100%;
+}
+
+
+/* Fix the box sizing */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}

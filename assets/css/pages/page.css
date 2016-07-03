@@ -1,0 +1,90 @@
+/**
+ *
+ * Use this for default page styles that apply to all pages
+ *
+ * ## Usage
+ * Import into your main file using
+ *
+ * @example
+ *     @import "__pages/page";
+ *
+ */
+
+.page {
+    padding-top: 40px;
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-bottom: 5px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    .intro {
+        width: 80%;
+    }
+
+    header,
+    section {
+        margin-bottom: 40px;
+    }
+
+    [class*='col-'],
+    .grid-custom__col,
+    .example {
+        font-size: 12px;
+        line-height: 12px;
+        font-family: var(--font-helvetica);
+        font-weight: 300;
+        text-align: center;
+        padding: 20px;
+        background: #f2f2f2;
+    }
+
+    [class*='grid-'] {
+        margin-bottom: 15px;
+    }
+
+    .grid-nogaps {
+        border: 1px solid #e2e2e2;
+        border-right: none;
+        border-bottom: none;
+
+        [class*='col-'] {
+            border-bottom: 1px solid #e2e2e2;
+            border-right: 1px solid #e2e2e2;
+        }
+    }
+
+    .grid-smaller {
+        margin-bottom: 0;
+    }
+
+    .example-wrap {
+        margin-bottom: 15px;
+    }
+
+    .code-wrap {
+        h3 {
+            font-size: 16px;
+            line-height: 22px;
+            font-family: var(--font-helvetica);
+        }
+
+        /*Prism Syntax Highlighting*/
+        pre[class*="language-"],
+        pre span {
+            @include font(15, 15);
+        }
+
+        pre[class*="language-"] {
+            padding: 40px 40px 0 10% !important;
+            margin-bottom: 30px;
+        }
+    }
+}
