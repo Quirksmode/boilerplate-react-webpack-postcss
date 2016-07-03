@@ -5,6 +5,8 @@ import GifModal from './includes/GifModal';
 import SearchBar from './includes/SearchBar';
 import Header from '../header';
 import request from 'superagent';
+import './page-home.css';
+
 
 
 class PageHome extends React.Component {

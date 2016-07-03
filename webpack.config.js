@@ -1,3 +1,5 @@
+// Yo check me out https://github.com/css-modules/postcss-modules-values
+
 const path = require('path');
 const webpack = require('webpack');
 
@@ -43,6 +45,7 @@ module.exports = {
           // add your 'plugins' here
           require('postcss-simple-vars'), // $ Sass Variables https://github.com/postcss/postcss-simple-vars
           //require('stylelint')(),
+          require('postcss-nested')(),
           require('postcss-mq-grid')(),
           require('postcss-assets')(),
           require('rucksack-css'),
