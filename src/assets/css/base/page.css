@@ -1,0 +1,16 @@
+/**
+ *
+ * Use this for default page styles that apply to all pages
+ *
+ * ## Usage
+ * Import into your main file using
+ *
+ * @example
+ *     @import "__pages/page";
+ *
+ */
+
+.page {
+    padding-top: 40px;
+
+}

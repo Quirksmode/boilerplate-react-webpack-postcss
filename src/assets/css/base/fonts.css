@@ -1,0 +1,92 @@
+/**
+ * Fonts
+ * @group css.base.fonts
+ */
+
+
+/**
+// ------------------------------------------------
+// Font Variables
+// ------------------------------------------------
+*/
+
+/**
+ * @group css.base.fonts
+ * @param {string} $font-arial
+ */
+:root {
+  --font-helvetica: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+
+/**
+// ------------------------------------------------
+// Global Font Styles
+// ------------------------------------------------
+*/
+
+/*Font Sizing*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-helvetica);
+}
+
+/*Heading Styles*/
+h1 {
+    font-size: 50px;
+    line-height: 60px;
+    font-family: var(--font-helvetica);
+    font-weight: 300;
+}
+
+h2,
+h3 {
+    font-size: 30px;
+    line-height: 34px;
+    font-family: var(--font-helvetica);
+    font-weight: 300;
+}
+
+p,
+li,
+a {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: var(--font-helvetica);
+    font-weight: 300;
+
+    @media (--mq-from-tablet) {
+        font-size: 16px;
+    }
+}
+
+a {
+    font-size: 14px;
+    line-height: 18px;
+    transition: color 0.2s ease-out;
+    text-decoration: none;
+}
+
+/*Better font rendering*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+span,
+input,
+label,
+textarea,
+time,
+button,
+address {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
